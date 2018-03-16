@@ -1,0 +1,100 @@
+@import 'css/bootstrap.css';
+@import 'css/fontawesome-all.css';
+
+body{
+	background: white;
+}
+.box-1,
+.box-2,
+.box-3{
+	height: 200px;
+}
+
+/*.box-1{
+	background: blue;
+}
+.box-2{
+	background: red;
+}
+.box-3{
+	background: green;
+}*/
+#landing{
+	background-image: url("img/mike_kaws.jpg");
+	padding-bottom: 30rem;
+	padding-top: 25rem;
+	/* Full height */
+	height: 100%; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.container.navigation{
+	background: white;
+	max-width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+.navigation a{
+	color: black;
+	text-decoration: none;
+}
+.services ul{
+	float: right;
+	margin: 1rem 0rem;
+}
+.services li{
+	display: inline-block;
+	margin-right: 2rem;
+}
+.services li:last-of-type{
+	margin-right: 0rem;
+}
+.logo a{
+	margin: 1rem 0rem;
+	padding: 0rem;
+}
+
+#about{
+	margin-top: 1rem;
+}
+.about-panel{
+	padding: 1rem;
+	background-color: white;
+	color: black;
+}
+.about-panel img{
+	width: 100%;
+}
+.about-panel.img{
+	padding: 0rem;
+	background: none;
+}
+
+#skills{
+	margin-top: 1rem;
+}
+#skills ul {
+    list-style: none;
+    padding-left: 0rem;
+    text-align: center;
+}
+#before-blog{
+	background-image: url("img/selfie.jpg");
+	padding-bottom: 30rem;
+	padding-top: 25rem;
+	/* Full height */
+	height: 100%; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.fa, .fas{
+	font-size: 6rem;
+}
