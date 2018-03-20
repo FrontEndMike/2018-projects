@@ -4,10 +4,9 @@
 body{
 	background: white;
 }
-.box-1,
-.box-2,
-.box-3{
-	height: 200px;
+a:hover {
+    color: black;
+    text-decoration: none;
 }
 
 /*.box-1{
@@ -19,6 +18,9 @@ body{
 .box-3{
 	background: green;
 }*/
+svg{
+	width: 2rem;
+}
 #landing{
 	background-image: url("img/mike_kaws.jpg");
 	padding-bottom: 30rem;
@@ -36,11 +38,21 @@ body{
 	background: white;
 	max-width: 100%;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
+    border-bottom: 1px solid black;
+
 }
-.navigation a{
+.navigation, a{
 	color: black;
 	text-decoration: none;
+}
+.mobile-menu, a{
+	color: black;
+	text-decoration: none;
+}
+.container.mobile{
+	padding-top: 3rem;
+	max-width: 100%;
 }
 .services ul{
 	float: right;
@@ -48,7 +60,7 @@ body{
 }
 .services li{
 	display: inline-block;
-	margin-right: 2rem;
+	margin-right: 1rem;
 }
 .services li:last-of-type{
 	margin-right: 0rem;
@@ -57,7 +69,7 @@ body{
 	margin: 1rem 0rem;
 	padding: 0rem;
 }
-
+ul.social-menu{}
 #about{
 	margin-top: 1rem;
 }
@@ -97,4 +109,146 @@ body{
 }
 .fa, .fas{
 	font-size: 6rem;
+}
+
+.menu-container {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: .5rem;
+    float: right;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hide{display: none;}
+.show{display: block;}
+.nav{
+	display: none;
+}
+.nav svg{
+	width: 1.10rem;
+	vertical-align: middle;
+}
+.logo{
+	width: 83%;
+	padding-left: 1rem;
+}
+.services{
+	width: 17%;
+	padding-right: 1rem;
+}
+.mobile-menu{
+	position: relative;
+	top: 0;
+}
+ul.mobile-menu{
+	list-style: none;
+	padding-left: 0rem;
+	text-align: center;
+	margin-bottom: 0rem;
+}
+.mobile-menu li{
+	padding: 0.5rem 0rem;
+	border-bottom: 1px solid black;
+}
+.col-sm-12{
+	padding: 0rem;
+}
+#slider.closed{
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	top: -260px !important;
+}
+.open{
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	padding-top: 3rem;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+	top: -40px;
+	width: 100%;
+}
+ul.social-menu {
+    list-style: none;
+    padding: 0rem;
+    text-align: center;
+    margin-bottom: 0rem;
+    padding-top: .5rem;
+}
+ul.social-menu li{
+	padding: .25rem;
+	display: inline-block;
+	margin-right: .5rem;
+}
+ul.social-menu li:last-of-type{
+	margin-right: 0rem;
+}
+ul.social-menu-desktop{
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	ul.social-menu-desktop {
+	    list-style: none;
+	    padding: 0rem;
+	    text-align: center;
+	    margin-bottom: 0rem;
+	    padding-top: 0rem;
+	    margin-top: 0.5rem;
+	    margin-right: 1rem;
+	    display: inline-block;
+	    float: right;
+	}
+	.social-menu-desktop svg {
+	    width: 1.5rem;
+	}
+	ul.social-menu-desktop li {
+	    padding: .25rem;
+	    display: inline-block;
+	    margin-right: .25rem;
+	}
+	ul.social-menu{
+		display: none;
+	}
+    .menu-container{
+    	display: none;
+    }
+    .nav{
+    	display: block;
+    }
+    .logo{
+    	width: 20%
+    }
+    .logo{
+    	padding-right: 1rem;
+    }
+    .services{
+    	width: 80%;
+    }
+    .mobile-menu{
+    	display: none;
+    }
 }
