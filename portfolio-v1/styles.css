@@ -1,12 +1,39 @@
 @import 'css/bootstrap.css';
 @import 'css/fontawesome-all.css';
+@import 'css/portfolio.css';
+@import 'css/blog.css';
+@font-face { font-family: Caviar; src: url('css/CaviarDreams.ttf'); } 
+@font-face { font-family: Caviar; font-weight: bold; src: url('css/CaviarDreams_Bold.ttf');}
 
 body{
 	background: white;
 }
+h1,
+h2,
+h3,
+h4{ font-family: Caviar;	
+ }
+ h1,
+ h2,
+ h3{
+ 	font-weight: bold;
+ }
 a:hover {
     color: black;
     text-decoration: none;
+}
+a.btn-style:hover{
+	color: black;
+	background-color: transparent;
+}
+a.btn-style{
+	border: 1px solid black;
+	border-radius: 0px;
+	background-color: black;
+	color: white;
+	max-width: 110px;
+	display: block;
+	margin: 0 auto;
 }
 
 /*.box-1{
@@ -22,7 +49,7 @@ svg{
 	width: 2rem;
 }
 #landing{
-	background-image: url("img/mike_kaws.jpg");
+	background-image: url("img/halloween_pic_1.jpg");
 	padding-bottom: 30rem;
 	padding-top: 25rem;
 	/* Full height */
@@ -74,9 +101,9 @@ ul.social-menu{}
 	margin-top: 1rem;
 }
 .about-panel{
-	padding: 1rem;
 	background-color: white;
 	color: black;
+	padding: 1rem;
 }
 .about-panel img{
 	width: 100%;
@@ -86,16 +113,29 @@ ul.social-menu{}
 	background: none;
 }
 
-#skills{
-	margin-top: 1rem;
+section#portfolio{
+	margin: 1rem 0rem;
 }
-#skills ul {
+section#portfolio .container{
+	padding-bottom: 2rem;
+}
+section#portfolio ul {
     list-style: none;
     padding-left: 0rem;
     text-align: center;
 }
+section#portfolio img{
+	width: 100%;
+}
+section#portfolio h2{
+	text-align: center;
+}
+section#portfolio p{
+	text-align: center;
+
+}
 #before-blog{
-	background-image: url("img/selfie.jpg");
+	background-image: url("img/futures_fund_1.jpg");
 	padding-bottom: 30rem;
 	padding-top: 25rem;
 	/* Full height */
@@ -107,10 +147,47 @@ ul.social-menu{}
 	background-size: cover;
 	background-position: center center;
 }
+#blog{
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+}
+#blog img{
+	max-width: 50px;
+}
+#blog h2{
+	display: inline-block;
+}
 .fa, .fas{
 	font-size: 6rem;
 }
+/*#before-hacknight{
+	background-image: url(img/hack_night.jpg);
+	padding-bottom: 0rem;
+	padding-top: 25rem;
+	height: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+*/
+#hacknight h2{
+	margin-top: 1rem;
+	text-align: center;
+}
+#hacknight img{
+	width: 100%;
+}
+#hacknight{
+	background-color: #ffc107;
+	padding-bottom: 1rem
+}
 
+
+
+.body-copy-panel{
+	padding-bottom: 1rem
+}
 .menu-container {
     display: inline-block;
     cursor: pointer;
@@ -167,9 +244,9 @@ ul.mobile-menu{
 }
 .mobile-menu li{
 	padding: 0.5rem 0rem;
-	border-bottom: 1px solid black;
+	/*border-bottom: 1px solid black;*/
 }
-.col-sm-12{
+#slider .col-sm-12{
 	padding: 0rem;
 }
 #slider.closed{
@@ -210,7 +287,40 @@ ul.social-menu-desktop{
 	display: none;
 }
 
+
+.desktop-btn{
+	display: none !important;
+}
+.mobile-btn{
+	display: inline-block;
+}
+.text-center{text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE STYLES BEGIN HERE*/
+@media only screen and (min-width: 576px) {
+	.about-panel{
+		padding: 0rem;
+	}
+}
+
 @media only screen and (min-width: 768px) {
+	.mobile-btn{
+		display: none !important;
+	}
+	.desktop-btn{
+		display: block;
+	}
 	ul.social-menu-desktop {
 	    list-style: none;
 	    padding: 0rem;
