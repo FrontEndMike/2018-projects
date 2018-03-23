@@ -1,5 +1,5 @@
 #blog-header{
-	padding-top: 4.75rem;
+	padding-top: 5.75rem;
 	padding-bottom: 2rem;
 }
 #blogs p{
@@ -32,10 +32,9 @@ span{
 	font-size: 1.25rem;
 }
 #blogs ul{
-	padding-left: 0rem;
+	padding-left: 1rem;
 }
 #blogs li{
-	list-style: none;
 	letter-spacing: 1px;
 	font-size: 1rem;
 }
