@@ -8,7 +8,10 @@
 #portfolio h3{
 	text-align: center;
 }
-#portfolio h3,h4{
+div#portfolio h3{
+	font-size: 1.5rem;
+}
+div#portfolio h4{
 	font-size: 1.25rem;
 }
 #portfolio ul{

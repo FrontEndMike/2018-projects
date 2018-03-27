@@ -19,7 +19,7 @@
 	margin: 1rem 0rem;
 	text-transform: capitalize;
 }
-span{
+#blogs span{
 	font-style: italic;
 }
 .blog-date{
@@ -27,9 +27,11 @@ span{
 }
 #blogs h3{
 	text-align: left;
+	font-size: 1.5rem;
 }
-#blogs h3,h4{
+#blogs h4{
 	font-size: 1.25rem;
+	font-weight: 300;
 }
 #blogs ul{
 	padding-left: 1rem;
@@ -43,6 +45,9 @@ span{
 }
 .blog-internal img{
 	margin: 1rem 0rem;
+}
+.blog-int .btn{
+	margin-top: 2rem;
 }
 img.code-example {
     max-width: 250px;

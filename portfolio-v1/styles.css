@@ -2,20 +2,25 @@
 @import 'css/fontawesome-all.css';
 @import 'css/portfolio.css';
 @import 'css/blog.css';
-@font-face { font-family: Caviar; src: url('css/CaviarDreams.ttf'); } 
-@font-face { font-family: Caviar; font-weight: bold; src: url('css/CaviarDreams_Bold.ttf');}
-
+@import 'css/about.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*@font-face { font-family: Caviar; src: url('css/CaviarDreams.ttf'); } 
+@font-face { font-family: Caviar; font-weight: bold; src: url('css/CaviarDreams_Bold.ttf');}*/
+@font-face { font-family: Roboto; font-weight: bold; src: url('css/Roboto-Bold.ttf');}
+@font-face { font-family: Roboto; font-weight: 300; src: url('css/Roboto-Light.ttf');}
 body{
 	background: white;
 }
 h1,
 h2,
 h3,
-h4{ font-family: Caviar;	
+h4{ font-family: 'Roboto', sans-serif;;	
  }
  h1,
  h2,
  h3{
+ 	font-size: 1.75rem;
  	font-weight: bold;
  }
 a:hover {
@@ -23,8 +28,9 @@ a:hover {
     text-decoration: none;
 }
 a.btn-style:hover{
-	color: black;
-	background-color: transparent;
+	color: white;
+	background-color: #02bdd5;
+	border: 1px solid #02bdd5;
 }
 a.btn-style{
 	border: 1px solid black;
@@ -34,6 +40,25 @@ a.btn-style{
 	max-width: 110px;
 	display: block;
 	margin: 0 auto;
+}
+input.btn-style:hover{
+	color: white;
+	background-color: #02bdd5;
+	border: 1px solid #02bdd5;
+}
+input.btn-style{
+	border: 1px solid black;
+	border-radius: 0px;
+	background-color: black;
+	color: white;
+	max-width: 140px;
+	display: block;
+	margin: 0 auto;
+}
+.btn-success.disabled, .btn-success:disabled {
+    color: #fff;
+    background-color: black;
+    border-color: black;
 }
 
 /*.box-1{
@@ -49,23 +74,68 @@ svg{
 	width: 2rem;
 }
 #landing{
-	background-image: url("img/halloween_pic_1.jpg");
-	padding-bottom: 30rem;
-	padding-top: 25rem;
+	/*background-image: url("img/halloween_pic_1.jpg");*/
+	background: /* top, #00000000 #ffffff */ linear-gradient( #ffffff, rgba(255, 255, 255, 0.63) ), /* bottom, image */ url(img/halloween_pic_1.jpg);
+	padding-bottom: 15rem;
+	padding-top: 15rem;
 	/* Full height */
 	height: 100%; 
-
+	/*opacity: 0.2;*/
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 }
+/*#landing:before {
+    content: '';
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}*/
+#about,
+#blog
+{
+	padding: 2rem 0rem;
+}
+#hacknight{
+	padding-bottom: 2rem;
+}
+.landing-wrap{
+	z-index: 999;
+	color: black;
+
+}
+.landing-wrap b{
+	color: #02bdd5;
+}
+.landing-wrap h2{
+	font-size: 35px;
+	line-height: 50px;
+	color: #333;
+	font-weight: 700;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+.landing-wrap h3{
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 38px;
+	line-height: 27px;
+	text-transform: uppercase;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 25px;
+}
 .container.navigation{
 	background: white;
 	max-width: 100%;
 	position: fixed;
-	z-index: 2;
+	z-index: 99999;
     border-bottom: 1px solid black;
 
 }
@@ -112,6 +182,12 @@ ul.social-menu{}
 	padding: 0rem;
 	background: none;
 }
+a.link{
+	color: #02bdd5;
+}
+.about-panel .btn{
+	margin-top: 2rem;
+}
 
 section#portfolio{
 	margin: 1rem 0rem;
@@ -147,10 +223,9 @@ section#portfolio p{
 	background-size: cover;
 	background-position: center center;
 }
-#blog{
-	margin-top: 1rem;
+/*#blog{
 	padding-bottom: 1rem;
-}
+}*/
 #blog img{
 	max-width: 50px;
 }
@@ -180,7 +255,6 @@ section#portfolio p{
 }
 #hacknight{
 	background-color: #ffc107;
-	padding-bottom: 1rem
 }
 
 
@@ -254,19 +328,20 @@ ul.mobile-menu{
 	-moz-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
-	top: -260px !important;
+	top: -280px !important;
 }
 .open{
 	-webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
-	padding-top: 3rem;
+	padding-top: 4rem;
 	position: fixed;
-	z-index: 1;
+	z-index: 99998;
 	background-color: white;
 	top: -40px;
 	width: 100%;
+	border-bottom: 1px solid black;
 }
 ul.social-menu {
     list-style: none;
@@ -315,6 +390,13 @@ ul.social-menu-desktop{
 }
 
 @media only screen and (min-width: 768px) {
+	#landing{
+		padding-bottom: 25rem;
+		padding-top: 25rem;
+	}
+	.landing-wrap h2{
+		font-size: 40px;
+	}
 	.mobile-btn{
 		display: none !important;
 	}

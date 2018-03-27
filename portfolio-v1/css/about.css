@@ -1,0 +1,26 @@
+.about #about{
+	padding: 0rem;
+	margin: 0rem;
+}
+
+#about-skill{
+	padding: 1rem 0rem;
+}
+
+#about-skill ul{
+	list-style: none;
+	padding-left: 0rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.about .col-sm-3{
+		display: inline-block;
+		width: 50%;
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+	.first-row ul{
+		margin-bottom: 0rem;
+	}
+}
