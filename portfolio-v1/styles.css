@@ -17,11 +17,10 @@ h2,
 h3,
 h4{ font-family: 'Roboto', sans-serif;;	
  }
- h1,
+ .home h1,
  h2,
  h3{
- 	font-size: 1.75rem;
- 	font-weight: bold;
+ 	font-size: 1.5rem;
  }
 a:hover {
     color: black;
@@ -75,7 +74,7 @@ svg{
 }
 #landing{
 	/*background-image: url("img/halloween_pic_1.jpg");*/
-	background: /* top, #00000000 #ffffff */ linear-gradient( #ffffff, rgba(255, 255, 255, 0.63) ), /* bottom, image */ url(img/halloween_pic_1.jpg);
+	background: /* top, #00000000 #ffffff */ linear-gradient( #ffffff, rgba(255, 255, 255, 0.63) ), /* bottom, image */ url(img/dojo.jpg);
 	padding-bottom: 15rem;
 	padding-top: 15rem;
 	/* Full height */
@@ -212,6 +211,19 @@ section#portfolio p{
 }
 #before-blog{
 	background-image: url("img/futures_fund_1.jpg");
+	padding-bottom: 30rem;
+	padding-top: 25rem;
+	/* Full height */
+	height: 100%; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#before-hacknight{
+	background-image: url("img/hacknight_group.jpg");
 	padding-bottom: 30rem;
 	padding-top: 25rem;
 	/* Full height */
