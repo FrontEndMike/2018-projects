@@ -77,14 +77,18 @@ svg{
 	background: /* top, #00000000 #ffffff */ linear-gradient( #ffffff, rgba(255, 255, 255, 0.63) ), /* bottom, image */ url(img/dojo.jpg);
 	padding-bottom: 15rem;
 	padding-top: 15rem;
-	/* Full height */
-	height: 100%; 
-	/*opacity: 0.2;*/
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: top;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100%;
+	width: 100%;
 	background-position: center center;
+	background-repeat: no-repeat;
+
+
 }
 /*#landing:before {
     content: '';
@@ -96,10 +100,12 @@ svg{
     right: 0;
     bottom: 0;
 }*/
-#about,
+#about{
+	padding: 1rem 0rem;
+}
 #blog
 {
-	padding: 2rem 0rem;
+	padding: 4rem 0rem;
 }
 #hacknight{
 	padding-bottom: 2rem;
@@ -213,27 +219,31 @@ section#portfolio p{
 	background-image: url("img/futures_fund_1.jpg");
 	padding-bottom: 30rem;
 	padding-top: 25rem;
-	/* Full height */
-	height: 100%; 
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: top;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100%;
+	width: 100%;
 	background-position: center center;
+	background-repeat: no-repeat;
 }
 #before-hacknight{
 	background-image: url("img/hacknight_group.jpg");
 	padding-bottom: 30rem;
 	padding-top: 25rem;
-	/* Full height */
-	height: 100%; 
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: top;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 100%;
+	width: 100%;
 	background-position: center center;
+	background-repeat: no-repeat;
 }
 /*#blog{
 	padding-bottom: 1rem;
@@ -382,8 +392,18 @@ ul.social-menu-desktop{
 	display: inline-block;
 }
 .text-center{text-align: center;}
+#form{
+	margin-bottom: 5rem;
+}
+footer{
+	background-color: black;
+    color: white;
+    padding: 1rem 0rem;
 
-
+}
+footer p{
+	margin-bottom: 0rem
+}
 
 
 
@@ -403,9 +423,56 @@ ul.social-menu-desktop{
 
 @media only screen and (min-width: 768px) {
 	#landing{
-		padding-bottom: 25rem;
-		padding-top: 25rem;
+		/*background-image: url("img/halloween_pic_1.jpg");*/
+		background: /* top, #00000000 #ffffff */ linear-gradient( #ffffff, rgba(255, 255, 255, 0.63) ), /* bottom, image */ url(img/dojo.jpg);
+		padding-bottom: 15rem;
+		padding-top: 15rem;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: top;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		height: 100%;
+		width: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
+	#before-blog{
+		background-image: url("img/futures_fund_1.jpg");
+		padding-bottom: 30rem;
+		padding-top: 25rem;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: top;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		height: 100%;
+		width: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	#before-hacknight{
+		background-image: url("img/hacknight_group.jpg");
+		padding-bottom: 30rem;
+		padding-top: 25rem;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: top;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		height: 100%;
+		width: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+
 	.landing-wrap h2{
 		font-size: 40px;
 	}
